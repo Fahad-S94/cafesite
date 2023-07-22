@@ -28,9 +28,13 @@ nav {
     text-shadow: 3px 3px 2px rgba(128, 0, 0, 1);
 }
 
-
+img {
+    width: 1200px;
+    margin-top: 50px;
+    margin-left: 15px;
+}
 .wrapper {
-    width: 100%;
+    /* width: 100%;
     height: 100vh;
 
     overflow-y: scroll;
@@ -43,13 +47,13 @@ nav {
 
 
 .section {
-    width: 100%;
+    /* width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    scroll-snap-align: start;
+    scroll-snap-align: start; */
 
 }
 
@@ -64,4 +68,11 @@ nav {
 }
 .three {
     background: url(../img\GettyImages-1222654885.webp) center/cover no-repeat;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+    
 }
