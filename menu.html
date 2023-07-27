@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css" />
     <!-- endbuild -->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,700&display=swap" rel="stylesheet">
@@ -29,7 +31,7 @@
         </div>
         <div class="container-fluid sticky-top">
             <nav class="navbar navbar-expand-lg navbar-light bg-warning rounded">
-                <a class="navbar-brand" href="./index.html">Cafe Brésil</a>
+                <a class="navbar-brand" href="./index.html"><strong>Cafe Brésil</strong></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -39,368 +41,618 @@
                         <a class="nav-item nav-link active" href="#">Menu</a>
                         <a class="nav-item nav-link" href="./about-us.html">About Us</a>
                         <a class="nav-item nav-link" href="./contact-us.html">Get in Touch</a>
-                        <a class="nav-item nav-link" href="./cart.html">Cart</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+            
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                        </ul>
+                        <button type="button" class="btn btn-success my-2 my-sm-0" data-toggle="modal" data-target="#staticBackdrop">
+                            <i class="bi bi-cart4 total-count"></i>
+                        </button>
                     </div>
                 </div>
             </nav>
             </div>
         </div>
         <div>
+            <section>
+                <div class="featured-area mt-5">
+                <div class="container">
+                    <div class="tab featured-tab-area">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-md-8">
+                            <ul class="tabs active">
+                                <li class="">
+                                    <a href="#">
+                                        All
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#">
+                                        Hot Drinks
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#">
+                                        Cold Drinks
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#">
+                                        Deserts
+                                    </a>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="tab_content current active pt-45">
+                            <div class="tabs_item current">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="./img/menu/Americano.jpg" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Americano</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 5.99 </h4>
+                                            <span>(4.9)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Americano" data-price="5.99" class="default-btn border-radius-5"> Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="/img/menu/cappuccino-005.webp" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Cappuccino</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 4.59 </h4>
+                                            <span>(4.4)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Cappuccino" data-price="4.59" class="default-btn border-radius-5">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="./img/menu/espresso.jpg" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Expresso</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 3.59 </h4>
+                                            <span>(4.4)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Expresso" data-price="3.59" class="default-btn border-radius-5">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="img/menu/Chocolate-truffle-and-honeycomb-torte-40ac4e3.webp" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Chocolate Truffle and Honeycomb Torte</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 8.00 </h4>
+                                            <span>(4.9)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Chocolate Truffle and Honeycomb Torte" data-price="8.00" class="default-btn border-radius-5">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="img/menu/double-Chocolate-Chip-Frappe-2-3.jpg" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Double Chocolate Chip Frappe</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 6.59 </h4>
+                                            <span>(4.4)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Double Chocolate Chip Frappe" data-price="6.59" class="default-btn border-radius-5">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="img/menu/easy-chocolate-molten-cakes-37a25eb.webp" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Chocolate Molten Cakes</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 8.99 </h4>
+                                            <span>(4.4)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Chocolate Molten Cakes" data-price="8.99" class="default-btn border-radius-5">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="img/menu/floating-island-3a8b98b.webp" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Floating Island</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 7.99 </h4>
+                                            <span>(4.9)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Floating Island" data-price="7.99" class="default-btn border-radius-5">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="img/menu/iced american.jpg" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Iced Americano</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 3.59 </h4>
+                                            <span>(4.0)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Iced Americano" data-price="3.59" class="default-btn border-radius-5">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="img/menu/latte.jpg" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Latte</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 2.59 </h4>
+                                            <span>(4.4)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Latte" data-price="2.59" class="default-btn border-radius-5">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="img/menu/mocha-frappe.jpg" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Mocha Frappe</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 4.49 </h4>
+                                            <span>(3.9)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Mocha Frappe" data-price="4.49" class="default-btn border-radius-5">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="img/menu/Mochaccino.webp" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Mochaccino</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 4.59 </h4>
+                                            <span>(4.4)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Mochaccino" data-price="4.59" class="default-btn border-radius-5">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="img/menu/salted-chocolate-hazelnut-brownies-250693d.webp" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Salted Chocolate Hazelnut Brownies</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 4.59 </h4>
+                                            <span>(4.4)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Salted Chocolate Hazelnut Brownies" data-price="4.59" class="default-btn border-radius-5">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
 
-      <div class="container aos-init aos-animate" data-aos="fade-up">
+                            <!-- Start of Hot tab -->
+                            <div class="tabs_item">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="./img/menu/Americano.jpg" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Americano</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 5.99 </h4>
+                                            <span>(4.9)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Americano" data-price="5.99" class="default-btn border-radius-5"> Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="/img/menu/cappuccino-005.webp" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Cappuccino</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 4.59 </h4>
+                                            <span>(4.4)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Cappuccino" data-price="4.59" class="default-btn border-radius-5">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="./img/menu/espresso.jpg" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Expresso</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 3.59 </h4>
+                                            <span>(4.4)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Expresso" data-price="3.59" class="default-btn border-radius-5">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="img/menu/latte.jpg" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Latte</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 2.59 </h4>
+                                            <span>(4.4)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Latte" data-price="2.59" class="default-btn border-radius-5">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="img/menu/Mochaccino.webp" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Mochaccino</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 4.59 </h4>
+                                            <span>(4.4)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Mochaccino" data-price="4.59" class="default-btn border-radius-5">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
 
-        <div class="section-header">
-          <h2>Our Menu</h2>
-          <p>Check Our <span>Yummy Menu</span></p>
-        </div>
+                                
+                            </div>
+                            </div>
+                            
+                            
+                            <!-- Start of cold-drinks tab -->
+                            <div class="tabs_item">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="img/menu/double-Chocolate-Chip-Frappe-2-3.jpg" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Double Chocolate Chip Frappe</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 6.59 </h4>
+                                            <span>(4.4)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Double Chocolate Chip Frappe" data-price="6.59" class="default-btn border-radius-5">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="img/menu/iced american.jpg" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Iced Americano</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 3.59 </h4>
+                                            <span>(4.0)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Iced Americano" data-price="3.59" class="default-btn border-radius-5">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="img/menu/mocha-frappe.jpg" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Mocha Frappe</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 4.49 </h4>
+                                            <span>(3.9)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Mocha Frappe" data-price="4.49" class="default-btn border-radius-5">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-        <ul class="nav nav-tabs d-flex justify-content-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" role="tablist">
+                                
+                            </div>
+                            </div>
 
-          <li class="nav-item" role="presentation">
-            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters" aria-selected="true" role="tab">
-              <h4>Starters</h4>
-            </a>
-          </li><!-- End tab nav item -->
+                            <!-- start of deserts tab -->
+                            <div class="tabs_item">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="img/menu/Chocolate-truffle-and-honeycomb-torte-40ac4e3.webp" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Chocolate Truffle and Honeycomb Torte</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 8.00 </h4>
+                                            <span>(4.9)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Chocolate Truffle and Honeycomb Torte" data-price="8.00" class="default-btn border-radius-5">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="img/menu/easy-chocolate-molten-cakes-37a25eb.webp" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Chocolate Molten Cakes</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 8.99 </h4>
+                                            <span>(4.4)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Chocolate Molten Cakes" data-price="8.99" class="default-btn border-radius-5">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="img/menu/floating-island-3a8b98b.webp" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Floating Island</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 7.99 </h4>
+                                            <span>(4.9)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Floating Island" data-price="7.99" class="default-btn border-radius-5">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="featured-item">
+                                        <div class="featured-item-img">
+                                        <a href="#">
+                                            <img src="img/menu/salted-chocolate-hazelnut-brownies-250693d.webp" alt="Images">
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                        <h3><a href="#">Salted Chocolate Hazelnut Brownies</a></h3>
+                                        <hr>
+                                        <div class="content-in">
+                                            <h4>$ 4.59 </h4>
+                                            <span>(4.4)<i class="fa fa-star"></i></span>
+                                        </div>
+                                        <hr>
+                                        <div class="featured-content-list">
+                                            <button type="button" data-name="Salted Chocolate Hazelnut Brownies" data-price="4.59" class="default-btn border-radius-5">Add to cart</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
 
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast" aria-selected="false" tabindex="-1" role="tab">
-              <h4>Breakfast</h4>
-            </a><!-- End tab nav item -->
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Your Cart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                        <table class="show-cart table">
+                
+                        </table>
+                        <div class="grand-total">Total price: ₹<span class="total-cart"></span></div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-danger clear-all">Clear All</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>  
 
-          </li><li class="nav-item" role="presentation">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch" aria-selected="false" tabindex="-1" role="tab">
-              <h4>Lunch</h4>
-            </a>
-          </li><!-- End tab nav item -->
 
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner" aria-selected="false" tabindex="-1" role="tab">
-              <h4>Dinner</h4>
-            </a>
-          </li><!-- End tab nav item -->
-
-        </ul>
-
-        <div class="tab-content aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-
-          <div class="tab-pane fade active show" id="menu-starters" role="tabpanel">
-
-            <div class="tab-header text-center">
-              <p>Menu</p>
-              <h3>Starters</h3>
-            </div>
-
-            <div class="row gy-5">
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $5.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $14.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $8.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $9.95
-                </p>
-              </div><!-- Menu Item -->
-
-            </div>
-          </div><!-- End Starter Menu Content -->
-
-          <div class="tab-pane fade" id="menu-breakfast" role="tabpanel">
-
-            <div class="tab-header text-center">
-              <p>Menu</p>
-              <h3>Breakfast</h3>
-            </div>
-
-            <div class="row gy-5">
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $5.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $14.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $8.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $9.95
-                </p>
-              </div><!-- Menu Item -->
-
-            </div>
-          </div><!-- End Breakfast Menu Content -->
-
-          <div class="tab-pane fade" id="menu-lunch" role="tabpanel">
-
-            <div class="tab-header text-center">
-              <p>Menu</p>
-              <h3>Lunch</h3>
-            </div>
-
-            <div class="row gy-5">
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $5.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $14.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $8.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $9.95
-                </p>
-              </div><!-- Menu Item -->
-
-            </div>
-          </div><!-- End Lunch Menu Content -->
-
-          <div class="tab-pane fade" id="menu-dinner" role="tabpanel">
-
-            <div class="tab-header text-center">
-              <p>Menu</p>
-              <h3>Dinner</h3>
-            </div>
-
-            <div class="row gy-5">
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $5.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $14.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $8.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $12.95
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
-                <p class="ingredients">
-                  Lorem, deren, trataro, filede, nerada
-                </p>
-                <p class="price">
-                  $9.95
-                </p>
-              </div><!-- Menu Item -->
-
-            </div>
-          </div><!-- End Dinner Menu Content -->
-
-        </div>
-
-      </div>
-    
-        </div>
-        <div>
             <footer class="text-center text-lg-start text-warning">
                 <div class="container p-4">
                     <div class="row my-4">
@@ -496,12 +748,14 @@
         </div>
     </div>
     
-     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./script/script.js"></script>
+    <script src="./script/shopping-cart.js"></script>
+    
     <!-- endbuild -->
 </body>
 </html>
