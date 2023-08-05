@@ -3,7 +3,7 @@ body {
     background-color: rgb(0, 0, 0);
     color: white;
     margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Libre Franklin', sans-serif;
     font-size: 1.10em;
 
 
@@ -293,9 +293,10 @@ align-items: center;
 justify-content: space-between;
 padding: 15px 0 0;
 }
-.featured-tab-area .tabs li {
-margin-right: 5px;
+.featured-tab-area .tabs li { 
+    margin-right: 5px;
 }
 #staticBackdropLabel {
 font-weight: bold;
 }
+
